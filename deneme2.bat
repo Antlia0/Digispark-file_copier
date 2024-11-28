@@ -4,7 +4,7 @@ setlocal
 chcp 65001
 set "destFolder=docx"
 set "foundDrive="
-set "targetLabel=DENEME"
+set "targetLabel=USB-NAME"  :: write the usb name here
 
 :: USB sürücülerini bul ve kontrol et
 for %%D in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
