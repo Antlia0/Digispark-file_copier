@@ -12,7 +12,7 @@ void setup() {
   DigiKeyboard.delay(1000);
 
   // Find and check usb
-  DigiKeyboard.print("$usbDrive = (Get-WmiObject Win32_LogicalDisk | Where-Object { $_.VolumeName -eq 'DENEME' } | Select-Object -First 1).DeviceID; if ($usbDrive) { cd $usbDrive; } else { echo 'USB sürücüsü bulunamadı.' }");
+  DigiKeyboard.print("$usbDrive = (Get-WmiObject Win32_LogicalDisk | Where-Object { $_.VolumeName -eq 'USB-NAME' } | Select-Object -First 1).DeviceID; if ($usbDrive) { cd $usbDrive; } else { echo 'USB sürücüsü bulunamadı.' }");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(300);
 
